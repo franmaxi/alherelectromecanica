@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alher</title>
+  <meta name="description" content="Especialistas en bombas de agua en CABA. Reparación, colocación, extracción y mantenimiento. 6 meses de garantía.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Barra Superior de Anuncio (Sobre la Navbar) -->
+  <div class="top-banner">
+    <div class="container banner-content">
+      <span class="banner-item">
+        <svg viewBox="0 0 24 24" class="banner-icon"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+        Zona Exclusiva: CABA (Sin excepciones)
+      </span>
+      <span class="banner-item">
+        <svg viewBox="0 0 24 24" class="banner-icon"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        6 Meses de Garantía en Todos los Trabajos
+      </span>
+    </div>
+  </div>
+
+  <!-- Navbar en Azul Marino Más Claro -->
+  <header class="navbar-header" id="navbar">
+    <div class="container navbar-container">
+      <a href="#" class="brand-logo" aria-label="Alher Inicio">
+        <img src="img/logo-white.png" alt="Alher Electromecánica - Bombas de Agua" class="navbar-logo-img">
+      </a>
+
+      <!-- Navigation links: ONLY ¿Quiénes somos?, Contacto, Ubicación -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#quienes-somos" class="nav-link">¿Quiénes somos?</a>
+          </li>
+          <li class="nav-item">
+            <a href="#ubicacion" class="nav-link">Ubicación</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacto" class="nav-link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Botón móvil hamburguesa -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="hero-tag">Servicio Técnico Especializado</span>
+        <h1 class="hero-title">
+          Reparación e Instalación de <span class="navy-highlight">Bombas de Agua</span>
+        </h1>
+        <p class="hero-description">
+          Diagnóstico preciso, colocación y mantenimiento integral con talleres propios en CABA. Todos nuestros trabajos cuentan con 6 meses de garantía.
+        </p>
+
+        <!-- Botones de Acción directos y limpios -->
+        <div class="hero-actions">
+          <a href="#" class="btn btn-whatsapp wa-direct-link" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" class="wa-icon">
+              <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.06 7.64C8.87 7.64 8.56 7.71 8.3 8C8.04 8.29 7.3 9.03 7.3 10.5C7.3 11.97 8.37 13.39 8.52 13.59C8.67 13.79 10.57 16.72 13.53 18C14.23 18.3 14.78 18.49 15.21 18.63C15.92 18.85 16.56 18.82 17.07 18.74C17.64 18.65 18.83 18.02 19.08 17.31C19.33 16.61 19.33 16 19.26 15.88C19.18 15.76 18.99 15.69 18.71 15.55C18.43 15.41 17.05 14.73 16.8 14.64C16.54 14.54 16.36 14.5 16.17 14.78C15.98 15.06 15.45 15.69 15.28 15.88C15.12 16.08 14.96 16.1 14.68 15.96C14.4 15.82 13.49 15.52 12.43 14.57C11.6 13.83 11.04 12.92 10.88 12.64C10.72 12.36 10.86 12.21 11 12.07C11.13 11.94 11.28 11.74 11.43 11.57C11.57 11.4 11.62 11.27 11.72 11.08C11.81 10.88 11.77 10.71 11.7 10.57C11.62 10.43 11.05 9.03 10.81 8.46C10.58 7.9 10.35 7.98 10.17 7.97C10 7.96 9.8 7.96 9.61 7.96C9.42 7.96 9.21 8.03 9.06 8.19"/>
+            </svg>
+            <span>Escribinos por WhatsApp</span>
+          </a>
+          <a href="#ubicacion" class="btn btn-outline">
+            <span>Ver Ubicación</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Tarjeta lateral -->
+      <div class="hero-card-col">
+        <div class="service-preview-card">
+          <h3 class="preview-title">Equipos y Servicios</h3>
+          <ul class="preview-list">
+            <li>Reparación, extracción y colocación de todo tipo de bomba</li>
+            <li>Elevadoras y Presurizadoras</li>
+            <li>Recirculadoras de calefacción</li>
+            <li>De pileta y Sumergibles</li>
+            <li>Tableros eléctricos para bombas</li>
+            <li>Plomería en circuito de bombas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Marcas con las que trabajamos -->
+  <section class="brands-section">
+    <div class="container">
+      <div class="brands-header text-center">
+        <span class="brands-tag">Experiencia Multimarca</span>
+        <h2 class="brands-title">Marcas con las que Trabajamos</h2>
+        <p class="brands-subtitle">Reparación, recambio de repuestos y service especializado en equipos líderes</p>
+      </div>
+
+      <div class="brands-grid">
+        <div class="brand-item" title="Rowa">
+          <img src="img/brand-rowa.svg" alt="Rowa" class="brand-logo-img">
+        </div>
+        <div class="brand-item" title="Pedrollo">
+          <img src="img/brand-pedrollo.png" alt="Pedrollo" class="brand-logo-img">
+        </div>
+        <div class="brand-item" title="Motoarg">
+          <img src="img/brand-motoarg.svg" alt="Motoarg" class="brand-logo-img">
+        </div>
+        <div class="brand-item" title="Czerweny">
+          <img src="img/brand-czerweny.svg" alt="Czerweny" class="brand-logo-img">
+        </div>
+        <div class="brand-item" title="Vulcano">
+          <img src="img/brand-vulcano.svg" alt="Vulcano" class="brand-logo-img">
+        </div>
+        <div class="brand-item" title="Elektrin">
+          <img src="img/brand-elektrin.svg" alt="Elektrin" class="brand-logo-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Servicios -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <p class="section-subtitle">Soluciones técnicas para circuitos hidráulicos y bombas de agua en CABA</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Servicio 1: Bombas de Agua -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          </div>
+          <h3 class="service-title">Bombas de Agua</h3>
+          <p class="service-subtitle-card">Reparación, extracción y colocación de todo tipo de bomba:</p>
+          <ul class="service-list">
+            <li>Elevadoras</li>
+            <li>Presurizadoras</li>
+            <li>Recirculadoras de calefacción</li>
+            <li>De pileta</li>
+            <li>Sumergibles</li>
+          </ul>
+        </div>
+
+        <!-- Servicio 2: Tableros eléctricos -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+          </div>
+          <h3 class="service-title">Tableros Eléctricos</h3>
+          <p class="service-text">Instalación y mantenimiento de tableros eléctricos de protección y comando, exclusivamente orientados a bombas de agua.</p>
+        </div>
+
+        <!-- Servicio 3: Plomería y reforma sanitaria -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+          </div>
+          <h3 class="service-title">Plomería y Reforma Sanitaria</h3>
+          <p class="service-text">Adecuación de cañerías, colectores y conexiones sanitarias dentro del circuito propio de las bombas.</p>
+        </div>
+
+        <!-- Servicio 4: Reparación completa de sistemas hidroneumáticos -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v2h-2zm-3.54 2.46l1.41-1.41 1.42 1.41-1.42 1.42zm7.08 0l1.41-1.41 1.42 1.41-1.42 1.42zM12 11c-1.1 0-2 .9-2 2 0 .74.4 1.38 1 1.72V17h2v-2.28c.6-.34 1-.98 1-1.72 0-1.1-.9-2-2-2z"/></svg>
+          </div>
+          <h3 class="service-title">Reparación Completa de Sistemas Hidroneumáticos</h3>
+          <p class="service-text">Diagnóstico integral, presurización, calibración de presostatos y mantenimiento completo de tanques y equipos hidroneumáticos.</p>
+        </div>
+
+        <!-- Servicio 5: Cambio de manchones -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66z"/></svg>
+          </div>
+          <h3 class="service-title">Cambio de Manchones</h3>
+          <p class="service-text">Reemplazo de manchones de acople elástico para eliminar vibraciones y ruidos molestos entre motor y bomba.</p>
+        </div>
+
+        <!-- Servicio 6: Automáticos de nivel -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.59L8.41 12 9.83 10.59 13 13.76l6.59-6.59L21 8.59z"/></svg>
+          </div>
+          <h3 class="service-title">Cambio de Automáticos</h3>
+          <p class="service-text">Sustitución de automáticos y flotantes de nivel para un encendido y apagado seguro en tanques y cisternas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección ¿Quiénes somos? (Navbar Link 1) -->
+  <section class="about-section" id="quienes-somos">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-logo-box">
+          <img src="img/logo-transparent.png" alt="Alher Electromecánica" class="about-logo-img">
+        </div>
+        <div class="about-content">
+          <h2 class="section-title">¿Quiénes somos?</h2>
+          <p class="about-text">
+            En <strong>Alher</strong> somos una empresa especializada en la <strong>reparación, instalación y mantenimiento de bombas de agua</strong> y sus componentes mecánicos.
+          </p>
+          <p class="about-text">
+            Trabajamos de forma exclusiva en el área de <strong>CABA</strong>, lo que nos permite coordinar visitas técnicas ágiles y brindar un seguimiento cercano. Contamos con dos talleres propios equipados para la reparación de motores y pruebas hidráulicas.
+          </p>
+          <p class="about-text">
+            Respaldamos cada uno de nuestros trabajos con una <strong>garantía escrita de 6 meses</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Ubicación con Fondo Azul para Gran Contraste (Navbar Link 3) -->
+  <section class="location-section" id="ubicacion">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2 class="section-title location-title-light">Ubicación de Nuestros Talleres</h2>
+        <p class="section-subtitle location-subtitle-light">Atención y recepción de bombas en la Ciudad Autónoma de Buenos Aires</p>
+      </div>
+
+      <div class="workshops-grid">
+        <!-- Taller 1: Pavón -->
+        <div class="workshop-card">
+          <div class="workshop-badge">Taller 1</div>
+          <h3 class="workshop-name">Taller Pavón</h3>
+          <p class="workshop-address">
+            <svg viewBox="0 0 24 24" class="loc-pin"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            <span>Pavón 2211, San Cristóbal, CABA</span>
+          </p>
+
+          <div class="map-embed-container">
+            <iframe 
+              title="Ubicación Alher Pavón 2211"
+              src="https://maps.google.com/maps?q=-34.6267363,-58.3958816&hl=es&z=16&output=embed"
+              width="100%" 
+              height="250" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <a href="https://maps.app.goo.gl/rSgeyZ7oD9PP7u5B9" target="_blank" rel="noopener noreferrer" class="btn btn-maps">
+            <svg viewBox="0 0 24 24" class="maps-icon"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            <span>Abrir en Google Maps</span>
+          </a>
+        </div>
+
+        <!-- Taller 2: Cochabamba -->
+        <div class="workshop-card">
+          <div class="workshop-badge">Taller 2</div>
+          <h3 class="workshop-name">Taller Cochabamba</h3>
+          <p class="workshop-address">
+            <svg viewBox="0 0 24 24" class="loc-pin"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            <span>Cochabamba 1502, CABA</span>
+          </p>
+
+          <div class="map-embed-container">
+            <iframe 
+              title="Ubicación Alher Cochabamba 1502"
+              src="https://maps.google.com/maps?q=-34.6238868,-58.3873735&hl=es&z=16&output=embed"
+              width="100%" 
+              height="250" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <a href="https://maps.app.goo.gl/gFTGzKZzSrndJofj9" target="_blank" rel="noopener noreferrer" class="btn btn-maps">
+            <svg viewBox="0 0 24 24" class="maps-icon"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            <span>Abrir en Google Maps</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto (Navbar Link 2) -->
+  <section class="contact-section" id="contacto">
+    <div class="container">
+      <div class="contact-box text-center">
+        <h2 class="contact-title">Contacto</h2>
+        <p class="contact-text">Hacé clic para escribirnos directamente a nuestro WhatsApp oficial y coordinar tu consulta o presupuesto.</p>
+        
+        <div class="contact-action">
+          <a href="#" class="btn btn-whatsapp-direct wa-direct-link" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" class="wa-icon-large">
+              <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.06 7.64C8.87 7.64 8.56 7.71 8.3 8C8.04 8.29 7.3 9.03 7.3 10.5C7.3 11.97 8.37 13.39 8.52 13.59C8.67 13.79 10.57 16.72 13.53 18C14.23 18.3 14.78 18.49 15.21 18.63C15.92 18.85 16.56 18.82 17.07 18.74C17.64 18.65 18.83 18.02 19.08 17.31C19.33 16.61 19.33 16 19.26 15.88C19.18 15.76 18.99 15.69 18.71 15.55C18.43 15.41 17.05 14.73 16.8 14.64C16.54 14.54 16.36 14.5 16.17 14.78C15.98 15.06 15.45 15.69 15.28 15.88C15.12 16.08 14.96 16.1 14.68 15.96C14.4 15.82 13.49 15.52 12.43 14.57C11.6 13.83 11.04 12.92 10.88 12.64C10.72 12.36 10.86 12.21 11 12.07C11.13 11.94 11.28 11.74 11.43 11.57C11.57 11.4 11.62 11.27 11.72 11.08C11.81 10.88 11.77 10.71 11.7 10.57C11.62 10.43 11.05 9.03 10.81 8.46C10.58 7.9 10.35 7.98 10.17 7.97C10 7.96 9.8 7.96 9.61 7.96C9.42 7.96 9.21 8.03 9.06 8.19"/>
+            </svg>
+            <span>Contactar por WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="img/logo-white.png" alt="Alher Electromecánica - Bombas de Agua" class="footer-logo-img">
+        <p class="footer-desc">Reparación, colocación y mantenimiento de bombas de agua en CABA. 6 meses de garantía.</p>
+      </div>
+
+      <div class="footer-nav">
+        <ul class="footer-links">
+          <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container text-center">
+        <p>© <span id="year"></span> Alher - Bombas de Agua. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante Permanente de WhatsApp -->
+  <a href="#" class="floating-whatsapp wa-direct-link" id="floatingWaBtn" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" class="floating-wa-icon">
+      <path fill="#FFFFFF" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.06 7.64C8.87 7.64 8.56 7.71 8.3 8C8.04 8.29 7.3 9.03 7.3 10.5C7.3 11.97 8.37 13.39 8.52 13.59C8.67 13.79 10.57 16.72 13.53 18C14.23 18.3 14.78 18.49 15.21 18.63C15.92 18.85 16.56 18.82 17.07 18.74C17.64 18.65 18.83 18.02 19.08 17.31C19.33 16.61 19.33 16 19.26 15.88C19.18 15.76 18.99 15.69 18.71 15.55C18.43 15.41 17.05 14.73 16.8 14.64C16.54 14.54 16.36 14.5 16.17 14.78C15.98 15.06 15.45 15.69 15.28 15.88C15.12 16.08 14.96 16.1 14.68 15.96C14.4 15.82 13.49 15.52 12.43 14.57C11.6 13.83 11.04 12.92 10.88 12.64C10.72 12.36 10.86 12.21 11 12.07C11.13 11.94 11.28 11.74 11.43 11.57C11.57 11.4 11.62 11.27 11.72 11.08C11.81 10.88 11.77 10.71 11.7 10.57C11.62 10.43 11.05 9.03 10.81 8.46C10.58 7.9 10.35 7.98 10.17 7.97C10 7.96 9.8 7.96 9.61 7.96C9.42 7.96 9.21 8.03 9.06 8.19"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

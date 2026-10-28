@@ -1,0 +1,900 @@
+/* ==========================================================================
+   ALHER - BOMBAS DE AGUA - ESTILOS PRINCIPALES
+   Color Oficial extraído del Logo: #0a2e8c (Azul Real / Cobalt Navy)
+   ========================================================================== */
+
+:root {
+  /* Color Oficial de Alher (Extraído de su Logo) */
+  --blue-primary: #0a2e8c;
+  --blue-navbar: #0a2e8c;
+  --blue-navbar-hover: #123bb0;
+  --blue-topbar: #071f61;
+  --blue-dark: #072063;
+  --blue-darkest: #04123b;
+  --blue-light: #1842b8;
+  --blue-soft-bg: #edf2fc;
+  --blue-accent: #b4c6fa;
+
+  /* Neutros */
+  --white: #ffffff;
+  --gray-50: #f8fafc;
+  --gray-100: #f1f5f9;
+  --gray-200: #e2e8f0;
+  --gray-400: #94a3b8;
+  --gray-600: #475569;
+  --gray-800: #1e293b;
+
+  /* WhatsApp */
+  --whatsapp: #25d366;
+  --whatsapp-hover: #1eb956;
+
+  /* Tipografía y sombras */
+  --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --shadow-sm: 0 1px 3px rgba(10, 46, 140, 0.08);
+  --shadow-md: 0 4px 14px rgba(10, 46, 140, 0.12);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.2);
+  --transition: all 0.2s ease;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--gray-800);
+  background-color: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ==========================================================================
+   Barra Superior de Anuncios (Sobre la Navbar: Garantía y CABA)
+   ========================================================================== */
+.top-banner {
+  background-color: var(--blue-topbar);
+  color: #e2e8f0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.banner-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.banner-icon {
+  width: 16px;
+  height: 16px;
+  fill: #a5b4fc;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Navbar con Logo Oficial
+   ========================================================================== */
+.navbar-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--blue-navbar);
+  box-shadow: 0 2px 12px rgba(10, 46, 140, 0.25);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-logo-img {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+  background: transparent;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  display: block;
+  transition: var(--transition);
+}
+
+.navbar-logo-img:hover {
+  opacity: 0.92;
+}
+
+/* Enlaces de Navegación */
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 2.2rem;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  padding: 0.3rem 0;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #a5b4fc;
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: #e0e7ff;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 22px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-toggle .bar {
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--white);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+/* ==========================================================================
+   Botones
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.4rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+}
+
+.btn-whatsapp {
+  background-color: var(--whatsapp);
+  color: var(--white);
+}
+
+.btn-whatsapp:hover {
+  background-color: var(--whatsapp-hover);
+  transform: translateY(-1px);
+}
+
+.btn-whatsapp-direct {
+  background-color: var(--whatsapp);
+  color: var(--white);
+  font-size: 1.05rem;
+  padding: 0.95rem 2.2rem;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+}
+
+.btn-whatsapp-direct:hover {
+  background-color: var(--whatsapp-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--blue-primary);
+  border: 1.5px solid var(--blue-primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--blue-soft-bg);
+  color: var(--blue-dark);
+}
+
+.btn-maps {
+  background-color: var(--blue-primary);
+  color: var(--white);
+  width: 100%;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.btn-maps:hover {
+  background-color: var(--blue-dark);
+  color: var(--white);
+}
+
+.maps-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.wa-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.wa-icon-large {
+  width: 22px;
+  height: 22px;
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero-section {
+  background-color: var(--white);
+  padding: 4.5rem 0 3.5rem;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1.25fr 0.85fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-tag {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--blue-primary);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.75rem;
+}
+
+.hero-title {
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: var(--blue-darkest);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.navy-highlight {
+  color: var(--blue-primary);
+}
+
+.hero-description {
+  font-size: 1.05rem;
+  color: var(--gray-600);
+  margin-bottom: 2rem;
+  max-width: 540px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Tarjeta lateral Hero */
+.service-preview-card {
+  background: var(--blue-dark);
+  color: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2.2rem 2rem;
+  box-shadow: var(--shadow-md);
+}
+
+.preview-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: var(--white);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 0.75rem;
+}
+
+.preview-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.preview-list li {
+  font-size: 0.92rem;
+  color: #e2e8f0;
+  position: relative;
+  padding-left: 1.4rem;
+}
+
+.preview-list li::before {
+  content: '•';
+  color: #a5b4fc;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* ==========================================================================
+   Sección Marcas
+   ========================================================================== */
+.brands-section {
+  padding: 3.5rem 0 3.2rem;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.brands-header {
+  margin-bottom: 2.2rem;
+}
+
+.brands-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--blue-primary);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+}
+
+.brands-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--blue-darkest);
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.01em;
+}
+
+.brands-subtitle {
+  font-size: 0.98rem;
+  color: var(--gray-600);
+}
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.brand-item {
+  background: var(--white);
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.brand-item:hover {
+  transform: translateY(-3px);
+  border-color: var(--blue-primary);
+  box-shadow: 0 6px 16px rgba(10, 46, 140, 0.1);
+}
+
+.brand-logo-img {
+  max-width: 100%;
+  max-height: 44px;
+  object-fit: contain;
+  transition: var(--transition);
+}
+
+/* ==========================================================================
+   Sección Servicios
+   ========================================================================== */
+.services-section {
+  padding: 4.5rem 0;
+  background-color: var(--gray-50);
+}
+
+.section-heading {
+  margin-bottom: 2.8rem;
+}
+
+.section-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--blue-darkest);
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.01em;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: var(--gray-600);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 1.8rem;
+  border: 1px solid var(--gray-200);
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--blue-primary);
+}
+
+.service-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--blue-soft-bg);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.1rem;
+}
+
+.service-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: var(--blue-primary);
+}
+
+.service-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--blue-darkest);
+  margin-bottom: 0.5rem;
+}
+
+.service-text {
+  font-size: 0.92rem;
+  color: var(--gray-600);
+  line-height: 1.5;
+}
+
+.service-subtitle-card {
+  font-size: 0.93rem;
+  font-weight: 700;
+  color: var(--blue-darkest);
+  margin-bottom: 0.5rem;
+}
+
+.service-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+}
+
+.service-list li {
+  font-size: 0.91rem;
+  color: var(--gray-600);
+  position: relative;
+  padding-left: 1.25rem;
+  line-height: 1.45;
+}
+
+.service-list li::before {
+  content: '•';
+  color: var(--blue-primary);
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* ==========================================================================
+   Sección ¿Quiénes somos?
+   ========================================================================== */
+.about-section {
+  padding: 4.5rem 0;
+  background-color: var(--white);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.about-logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.2rem 1.8rem;
+  background-color: var(--blue-soft-bg);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(10, 46, 140, 0.08);
+}
+
+.about-logo-img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  object-fit: contain;
+}
+
+.about-content {
+  width: 100%;
+}
+
+.about-content .section-title {
+  margin-bottom: 1.25rem;
+}
+
+.about-text {
+  font-size: 1.05rem;
+  color: var(--gray-600);
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+}
+
+.about-text strong {
+  color: var(--blue-darkest);
+}
+
+/* ==========================================================================
+   Sección Ubicación (FONDO EN AZUL CORPORATIVO #0a2e8c)
+   ========================================================================== */
+.location-section {
+  padding: 5rem 0;
+  background: linear-gradient(145deg, #071f61 0%, #0a2e8c 100%);
+  color: var(--white);
+}
+
+.location-title-light {
+  color: var(--white) !important;
+}
+
+.location-subtitle-light {
+  color: #c7d2fe !important;
+}
+
+.workshops-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 2.2rem;
+}
+
+.workshop-card {
+  background: var(--white);
+  color: var(--gray-800);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.workshop-badge {
+  display: inline-block;
+  background-color: #e0e7ff;
+  color: var(--blue-primary);
+  font-weight: 800;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.workshop-name {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--blue-darkest);
+  margin-bottom: 0.4rem;
+}
+
+.workshop-address {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.95rem;
+  color: var(--gray-600);
+  margin-bottom: 1.25rem;
+}
+
+.loc-pin {
+  width: 18px;
+  height: 18px;
+  fill: #dc2626;
+  flex-shrink: 0;
+}
+
+.map-embed-container {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+  background-color: var(--gray-100);
+}
+
+.map-embed-container iframe {
+  display: block;
+}
+
+/* ==========================================================================
+   Sección Contacto
+   ========================================================================== */
+.contact-section {
+  padding: 4.5rem 0;
+  background-color: var(--white);
+}
+
+.contact-box {
+  background: var(--blue-dark);
+  color: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem 2rem;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 0.6rem;
+}
+
+.contact-text {
+  font-size: 1rem;
+  color: #e2e8f0;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  line-height: 1.5;
+}
+
+.contact-action {
+  display: flex;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   Footer con Logo
+   ========================================================================== */
+.footer {
+  background-color: var(--blue-darkest);
+  color: #94a3b8;
+  padding: 3rem 0 1.5rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  background: transparent;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.footer-desc {
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  max-width: 380px;
+}
+
+.footer-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--white);
+}
+
+.footer-bottom {
+  padding-top: 1.5rem;
+  font-size: 0.82rem;
+  color: var(--gray-400);
+}
+
+/* ==========================================================================
+   Botón Flotante de WhatsApp
+   ========================================================================== */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  background-color: var(--whatsapp);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+  z-index: 999;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.floating-whatsapp:hover {
+  background-color: var(--whatsapp-hover);
+  transform: scale(1.05);
+}
+
+.floating-wa-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 860px) {
+  .banner-content {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background-color: var(--blue-navbar);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: none;
+  }
+
+  .nav-menu.is-active {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  .about-logo-box {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  .brands-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 540px) {
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .brand-item {
+    height: 72px;
+    padding: 0.75rem;
+  }
+
+  .brands-title {
+    font-size: 1.5rem;
+  }
+}
