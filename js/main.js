@@ -9,8 +9,8 @@
 // Ejemplo para CABA: '54911' + número (ej: '5491112345678')
 // =============================================================================
 const ALHER_CONFIG = {
-  whatsappNumber: '5491100000000',
-  defaultMessage: 'Hola Alher, quisiera consultar por el servicio de bombas de agua en CABA.'
+  whatsappNumber: '5491167178528',
+  defaultMessage: 'Hola Alher, quisiera consultar por el servicio de bombas de agua.'
 };
 
 /**
