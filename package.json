@@ -1,0 +1,12 @@
+{
+  "name": "alher-web",
+  "version": "1.0.0",
+  "description": "Sitio web de Alher Electromecánica",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
