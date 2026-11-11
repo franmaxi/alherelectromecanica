@@ -869,8 +869,8 @@ body {
   }
 
   .nav-menu {
-    position: fixed;
-    top: 72px;
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
     background-color: var(--blue-navbar);
@@ -878,7 +878,7 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: none;
-    max-height: calc(100vh - 72px);
+    max-height: calc(100vh - 72px - 60px);
     overflow-y: auto;
   }
 
